@@ -1,5 +1,3 @@
-// Login.js
-
 import React, { useState, useEffect } from 'react';
 import { Input, Button, Card } from 'antd';
 import { Link } from 'react-router-dom';
@@ -22,7 +20,7 @@ const Login = () => {
         justifyContent: 'center',
         margin: "10px"
     }
-    const inputStyles1 = {
+    const inputInsideStyles = {
         width: "50%",
         height: "30px",
         display: 'flex',
@@ -61,7 +59,7 @@ const Login = () => {
                 <div style={inputStyles}>
                     <Input
                         placeholder="Username"
-                        style={inputStyles1}
+                        style={inputInsideStyles}
                         onChange={text => { setName(text.target.value) }}
                     />
                 </div>
@@ -70,7 +68,7 @@ const Login = () => {
                     <Input
                         placeholder="Password"
                         type='password'
-                        style={inputStyles1}
+                        style={inputInsideStyles}
                         onChange={text => { setPassword(text.target.value) }}
                     />
                 </div>
@@ -83,7 +81,7 @@ const Login = () => {
 
             <div style={inputStyles}>
 
-                <div style={inputStyles1}>
+                <div style={inputInsideStyles}>
                     <Button
                         type="primary"
                         onClick={() => loginButton()} >

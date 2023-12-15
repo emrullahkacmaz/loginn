@@ -4,32 +4,6 @@ import { Link } from 'react-router-dom';
 
 const Login = () => {
 
-    const imageStyles = {
-        width: '300px',
-        height: '200px',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-    };
-
-    const inputStyles = {
-        width: "100%",
-        height: "30px",
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        margin: "10px"
-    }
-    const inputInsideStyles = {
-        width: "50%",
-        height: "30px",
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        margin: "10px"
-    }
-
-
     const [name, setName] = useState("");
     const [password, setPassword] = useState("");
 
@@ -97,3 +71,28 @@ const Login = () => {
 };
 
 export default Login;
+
+const imageStyles = {
+    width: '300px',
+    height: '200px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+};
+
+const inputStyles = {
+    width: "100%",
+    height: "30px",
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    margin: "10px"
+}
+const inputInsideStyles = {
+    width: "50%",
+    height: "30px",
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    margin: "10px"
+}
